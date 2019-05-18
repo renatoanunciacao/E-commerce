@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Charutos</title>
-    </head>
-    <body>
+  <head>
+    <title>Charutos</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js.map"></script>
+  <body>
+<!--cabeçalho-->
+    <div class="container">
+      <nav class="navbar navbar-default cabecalho">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+                <img alt="Logo" src="./images//logo.PNG" class="img-responsive logo">
+              </a>
+              <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="buscar" placeholder="O que você está procurando?">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                    <span id="inputSuccess4Status" class="sr-only">(successo)</span>
+                  </div>
+                  </form>
+                  <a class="navbar-brand desejo" href="#">
+                    <img alt="" src="./images/_ionicons_svg_ios-heart-empty.svg" class="img-responsive icon-heart"/>
+                    <span class="lista-desejo">Lista de desejo</span>
+                  </a>
+                  <a class="navbar-brand login" href="#">
+                      <img alt="" src="./images/_ionicons_svg_md-person.svg" class="img-responsive icon-heart"/>
+                      <span class="lista-desejo">Entrar</span>
+                    </a>
+            </div>
+          </div>
+        </nav>
+    </div>
+<!-- Banner do Site -->
+   <div class="container">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/banner.PNG" class="img-responsive" alt="banner " />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/banner.PNG" class="img-responsive" alt="banner " />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/banner.PNG" class="img-responsive" alt="banner " />
+        </div>
+      </div>
+      <!-- paginação -->
+      <div class="swiper-pagination"></div>
+    </div>
+   </div>
+
+   <div class="container">
+      <div class="row products">
+        <div class="col-md-3 text-center swiper-slide">
+          <img class="img-responsive" src="./images/charuto.jpg"/>
+        </div>
+        <div class="col-md-3 text-center swiper-slide">
+            <img class="img-responsive" src="./images/charuto1.jpeg"/>
+        </div>
+        <div class="col-md-3 text-center swiper-slide">
+            <img class="img-responsive" src="./images/charuto2.jpg"/>
+        </div>
+        <div class="col-md-3 text-center swiper-slide">
+            <img class="img-responsive" src="./images/charuto.jpg"/>
+          </div>
+        </div>
+     
+    </div>
 
 
-    </body>
+
+    <div class="container">
+      <div class="footer text-center">
+          Direitos Reservados
+      </div>
+
+    </div>
+
+    <script src="./js/bootstrap.js"></script>
+    <script type="text/javascript">
+      var mySwiper = new Swiper(".swiper-container", {
+        
+        pagination: {
+          el: ".swiper-pagination"
+        }
+      });
+    </script>
+  </body>
 </html>

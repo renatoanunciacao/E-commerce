@@ -1,4 +1,42 @@
-.banner img{
-    margin-top: 106px;
-    margin-bottom: 39px;
+.cabecalho{
+    height: 78px;
+}
+.swiper-container {
+    width: 1366px;
+    height: 350px;
+  
+}
+.logo{
+    margin-left: 100px;
+}
+.container{
+    max-width: 1364px !important;
+}
+#buscar{
+    width: 750px;
+    margin: -43px 0px -27px 200px;
+}
+.icon-heart{
+    width: 34px;
+    margin: -62px 2px 2px 1022px;
+}
+.lista-desejo{
+    margin-left: 6px;
+    font-size: 18px;
+    color: brown;
+    padding: 8px 1px;
+    position: relative;
+    top: -30px;
+}
+.desejo{
+    margin-left: -40px;
+}
+.login{
+    position: relative;
+    margin-left: 150px;
+    top: -40px;
+}
+.products{
+    margin-left: 40px;
+    margin-top: 191px;
 }
