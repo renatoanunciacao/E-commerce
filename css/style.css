@@ -1,42 +1,23 @@
-.cabecalho{
-    height: 78px;
-}
-.swiper-container {
-    width: 1366px;
-    height: 350px;
-  
-}
-.logo{
-    margin-left: 100px;
-}
-.container{
-    max-width: 1364px !important;
-}
-#buscar{
-    width: 750px;
-    margin: -43px 0px -27px 200px;
-}
-.icon-heart{
-    width: 34px;
-    margin: -62px 2px 2px 1022px;
-}
-.lista-desejo{
-    margin-left: 6px;
-    font-size: 18px;
-    color: brown;
-    padding: 8px 1px;
-    position: relative;
-    top: -30px;
-}
-.desejo{
-    margin-left: -40px;
-}
-.login{
-    position: relative;
-    margin-left: 150px;
-    top: -40px;
-}
-.products{
-    margin-left: 40px;
-    margin-top: 191px;
-}
+/* Required height of parents of the Half Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%; }
+
+/* Half Page Carousel itself*/
+.carousel {
+  height: 50%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Adjustment for mobile devices*/
+@media (max-width: 776px) {
+  .carousel {
+    height: 100%; } }
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #929FBA; }
