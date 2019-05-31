@@ -1,287 +1,406 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>E-Commerce Loja de Charutos</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="css/style.min.css" rel="stylesheet">
-  <link href="css/zoom.css" rel="stylesheet">
-</head>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <meta http-equiv="x-ua-compatible" content="ie=edge">
+          <title>E-Commerce Loja de Charutos</title>
+          <!-- Font Awesome -->
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+          <!-- Bootstrap core CSS -->
+          <link href="css/bootstrap.min.css" rel="stylesheet">
+          <!-- Material Design Bootstrap -->
+          <link href="css/mdb.min.css" rel="stylesheet">
+          <!-- Your custom styles (optional) -->
+          <link href="css/style.min.css" rel="stylesheet">
+          <link href="css/zoom.css" rel="stylesheet">
+          <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        </head>
 
-<body>
+        <body>
 
-  <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-    <div class="container">
+          <!-- Navbar -->
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container">
 
-   <a class="navbar-brand" href="#">
-          <img src="img/logo.jpg" alt="">
-        </a>
+           <a class="navbar-brand" href="#">
+                  <img src="img/logo.jpg" alt="">
+                </a>
 
-      <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <!-- Left -->
-        <ul class="navbar-nav mr-auto">
-           <li class="nav-item">
-            <a class="nav-link waves-effect" href="home-page.html">Página Inicial</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link waves-effect" href="#" target="_blank">Produtos</a>
-            <span class="sr-only">(atual)</span>
-          </li>
-        </ul>
-
-        <!-- Right -->
-        <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="checkout-page.html">
-              <span class="badge red z-depth-1 mr-1"> 1 </span>
-              <i class="fas fa-shopping-cart"></i>
-              <span class="clearfix d-none d-sm-inline-block">Carrinho</span>
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
-    </div>
-  </nav>
-  <!-- Navbar -->
-
-  <!--Main layout-->
-  <main class="mt-5 pt-4">
-    <div class="container dark-grey-text mt-5">
-
-      <!--Grid row-->
-      <div class="row wow fadeIn">
-
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
-
-         <div class="img-zoom-container">
-  <img id="myimage" src="img/charuto-destaque.jpg" width="300" height="240" alt="Charuto">
-  <div id="myresult" class="img-zoom-result"></div>
-</div>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
-
-          <!--Content-->
-          <div class="p-4">
-
-            <div class="mb-3">
-             
-              <a href="">
-                <span class="badge blue mr-1">Promoção</span>
-              </a>
-           
-            </div>
-
-            <p class="lead">
-              <span class="mr-1">
-                <del>R$ 155,90</del>
-              </span>
-              <span>R$ 140,31</span>
-            </p>
-
-            <p class="lead font-weight-bold">Descrição</p>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque quia ipsa
-              sint voluptatibus!
-              Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
-
-              <div class="formas">
-                                        <div class="container-cartoes">
-                                          <span>Outras formas de pagamento</span>
-                                            <p><img src="https://www.charutosonline.com/media/wysiwyg/cartoes.png" alt=""></p>                                        </div>
-                                        <div id="pagamento-wrap">
-                                            <div class="table-simples"><ul class="coluna"><li><span class="table-color"> 1x </span> de R$&nbsp;155,90 s/ juros</li><li><span class="table-color"> 2x </span> de R$&nbsp;77,95 s/ juros</li></ul><ul class="coluna"><li><span class="table-color"> 3x </span> de R$&nbsp;51,97 s/ juros</li><li><span class="table-color"> 4x </span> de R$&nbsp;42,17 c/ juros</li></ul><ul class="coluna"><li><span class="table-color"> 5x </span> de R$&nbsp;34,41 c/ juros</li></ul></div>
-                                        </div>
-                                        <script type="text/javascript">
-                                            jQuery(document).ready(function($) {
-                                                jQuery(".product-shop .formas").click(function(){
-                                                    jQuery(".formas .container-cartoes").toggleClass('ativo');
-                                                    jQuery(".formas #pagamento-wrap").toggle();
-                                                });
-                                            });
-                                        </script>
-                                    </div>
-
-            <form class="d-flex justify-content-left">
-              <!-- Default input -->
-              <input type="number" value="1" aria-label="Search" class="form-control" style="width: 100px">
-              <button class="btn btn-primary btn-md my-0 p" type="submit">Adicionar ao carrinho
-                <i class="fas fa-shopping-cart ml-1"></i>
+              <!-- Collapse -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
               </button>
 
-            </form>
+              <!-- Links -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <br>
-            <br>
-      
-      <section id="freteproduto">
-      <div class="grid12-12 no-gutter">
-        
-        <div class="grid12-5 no-gutter">
-          <h4 class="icon-truck">
-            <label for="postcode">
-              <i class="fa fa-truck" aria-hidden="true"></i>
-              <span class="title">Calcule o Frete</span>
-              <span class="subtitle">Valor e prazo para envio</span>
-            </label>
-          </h4>
+                <!-- Left -->
+                <ul class="navbar-nav mr-auto">
+                   <li class="nav-item">
+                    <a class="nav-link waves-effect" href="home-page.html">Página Inicial</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link waves-effect" href="#">Produtos</a>
+                    <span class="sr-only">(atual)</span>
+                  </li>
+                </ul>
+
+                <!-- Right -->
+                <ul class="navbar-nav nav-flex-icons">
+                  <li class="nav-item">
+                    <a class="nav-link waves-effect" href="checkout-page.html">
+                      <span class="badge red z-depth-1 mr-1"> 1 </span>
+                      <i class="fas fa-shopping-cart"></i>
+                      <span class="clearfix d-none d-sm-inline-block">Carrinho</span>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+
+            </div>
+          </nav>
+          <!-- Navbar -->
+
+          <!--Main layout-->
+          <main class="mt-5 pt-4">
+            <div class="container dark-grey-text mt-5">
+
+              <!--Grid row-->
+              <div class="row wow fadeIn">
+
+                <!--Grid column-->
+                 <div class="col-md-6 mb-4">
+          <img id="myimage" src="img/charuto-destaque.jpg" width="300" height="240" alt="Charuto">
+          <div id="myresult" class="img-zoom-result"></div>
         </div>
-        <div class="grid12-4 no-gutter">
-          <div class="containerFrete">
-            <input id="postcode" onkeypress="freteproduto.enterrateevent(event);" required="" class="input-text" type="text" title="Digite o CEP" maxlength="9">      
-            <input id="postcode2" class="no-display" onkeypress="freteproduto.enterrateevent(event);" required="" type="text" title="Digite o CEP">     
-            <button type="button" onclick="freteproduto.collectrates();" class="button primary btn-frete">OK</button>
-          </div>
+               
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                  <!--Content-->
+                  <div class="p-4">
+
+                    <div class="mb-3">
+                     
+                      <a href="">
+                        <span class="badge blue mr-1">Promoção</span>
+                      </a>
+                   
+                    </div>
+
+                    <p class="lead">
+                      <span class="mr-1">
+                        <del>R$ 155,90</del>
+                      </span>
+                      <span>R$ 140,31</span>
+                    </p>
+
+                    <p class="lead font-weight-bold">Descrição</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque quia ipsa
+                      sint voluptatibus!
+                      Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+
+                      <div class="formas">
+                                                <div class="container-cartoes">
+                                                  <span>Outras formas de pagamento</span>
+                                                    <p><img src="https://www.charutosonline.com/media/wysiwyg/cartoes.png" alt=""></p>                                        </div>
+                                                <div id="pagamento-wrap">
+                                                    <div class="table-simples"><ul class="coluna"><li><span class="table-color"> 1x </span> de R$&nbsp;155,90 s/ juros</li><li><span class="table-color"> 2x </span> de R$&nbsp;77,95 s/ juros</li></ul><ul class="coluna"><li><span class="table-color"> 3x </span> de R$&nbsp;51,97 s/ juros</li><li><span class="table-color"> 4x </span> de R$&nbsp;42,17 c/ juros</li></ul><ul class="coluna"><li><span class="table-color"> 5x </span> de R$&nbsp;34,41 c/ juros</li></ul></div>
+                                                </div>
+                                                <script type="text/javascript">
+                                                    jQuery(document).ready(function($) {
+                                                        jQuery(".product-shop .formas").click(function(){
+                                                            jQuery(".formas .container-cartoes").toggleClass('ativo');
+                                                            jQuery(".formas #pagamento-wrap").toggle();
+                                                        });
+                                                    });
+                                                </script>
+                                            </div>
+
+                    <form class="d-flex justify-content-left">
+                      <!-- Default input -->
+                      <input type="number" value="1" aria-label="Search" class="form-control" style="width: 100px">
+                      <button class="btn btn-primary btn-md my-0 p" type="submit">Adicionar ao carrinho
+                        <i class="fas fa-shopping-cart ml-1"></i>
+                      </button>
+
+                    </form>
+
+                    <br>
+                    <br>
+              
+              <section id="freteproduto">
+              <div class="grid12-12 no-gutter">
+                
+                <div class="grid12-5 no-gutter">
+                  <h4 class="icon-truck">
+                    <label for="postcode">
+                      <i class="fa fa-truck" aria-hidden="true"></i>
+                      <span class="title">Calcule o Frete</span>
+                      <span class="subtitle">Valor e prazo para envio</span>
+                    </label>
+                  </h4>
+                </div>
+                <div class="grid12-4 no-gutter">
+                  <div class="containerFrete">
+                    <input id="postcode" onkeypress="freteproduto.enterrateevent(event);" required="" class="input-text" type="text" title="Digite o CEP" maxlength="9">      
+                    <input id="postcode2" class="no-display" onkeypress="freteproduto.enterrateevent(event);" required="" type="text" title="Digite o CEP">     
+                    <button type="button" onclick="freteproduto.collectrates();" class="button primary btn-frete">OK</button>
+                  </div>
+                </div>
+                <div class="grid12-3">
+                  <a href="http://www.buscacep.correios.com.br/servicos/dnec/index.do" target="_blank">Não sei meu CEP!</a>
+                </div>
+              </div>
+
+              <div class="grid12-12 no-gutter resultFrete">
+                <ul id="shipping-rates"></ul>
+              </div>
+
+            </section>
+                  </div>
+                  <!--Content-->
+
+                </div>
+                <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <hr>
+
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center wow fadeIn">
+
+                <!--Grid column-->
+                <div class="col-md-6 text-center">
+
+                  <h4 class="my-4 h4">Mais Informações sobre o Produto</h4>
+
+                  <p>A linha de charutos Montecristo 1935 foi lançada, de forma limitada em 2015, para comemorar os 80 anos da marca, e agora virou um charuto de linha, com bitolas inéditas e blends mais encorpados, feitos para agradar quem aprecia um tabaco rico e intenso. A linha se apresenta com um miolo de sabor encorpado, diferente dos demais charutos da linha que possuem um tabaco de fortaleza média para forte e vem acondicionados em caixas de design exclusivo, de cor marrom Carmelita e com bordas arredondadas. Além da anilha tradicional se incorporou uma segunda anilha com o nome da bitola e uma terceira anilha no pé do charuto com a tradicinal flor de lis, que distingue a marca montecristo.
+        <br>
+        <br>
+        Escala de Força: Médio a Forte
+        Bitola: 130mm x 19,84mm</p>
+
+                </div>
+                <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+              <br>
+              <br>
+              <br>
+              <!--Grid row-->
+              <div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-9">
+                <h3>
+                    Outros produtos para você</h3>
+            </div>
+            <div class="col-md-3">
+                <!-- Controls -->
+                <div class="controls pull-right hidden-xs">
+                    <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example"
+                        data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-success" href="#carousel-example"
+                            data-slide="next"></a>
+                </div>
+            </div>
         </div>
-        <div class="grid12-3">
-          <a href="http://www.buscacep.correios.com.br/servicos/dnec/index.do" target="_blank">Não sei meu CEP!</a>
+        <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="img/charuto-01.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>
+                                                Charuto Montecristo</h5>
+                                            <h5 class="price-text-color">
+                                                R$ 199,99</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Adicionar ao carrinho</a></p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">Mais detalhes</a></p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="img/charuto-02.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>
+                                                Charuto Cubano</h5>
+                                            <h5 class="price-text-color">
+                                                R$ 249,99</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Adicionar ao carrinho</a></p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">Mais detalhes</a></p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="img/charuto-03.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>
+                                                Charuto Romeo y Julieta</h5>
+                                            <h5 class="price-text-color">
+                                                R$ 149,99</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Adicionar ao carrinho</a></p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">Mais detalhes</a></p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="img/charuto-04.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>
+                                                Charuto Nacional</h5>
+                                            <h5 class="price-text-color">
+                                                R$ 199,99</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Adicionar ao carrinho</a></p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">Mais detalhes</a></p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              <!--Grid row-->
+
+            </div>
+          </main>
+          <!--Main layout-->
+
+          <!--Footer-->
+    <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+      <hr class="my-4">
+
+      <!-- Social icons -->
+      <div class="pb-4">
+        <a href="#" target="_blank">
+          <i class="fab fa-facebook-f mr-3"></i>
+        </a>
+
+        <a href="#" target="_blank">
+          <i class="fab fa-twitter mr-3"></i>
+        </a>
+
         </div>
+      <!-- Social icons -->
+
+      <!--Copyright-->
+      <div class="footer-copyright py-3">
+        © 2019 Copyright:
+        <a>Charutos E-commerce</a>
       </div>
+      <!--/.Copyright-->
 
-      <div class="grid12-12 no-gutter resultFrete">
-        <ul id="shipping-rates"></ul>
-      </div>
+    </footer>
+    <!--/.Footer-->
+          <!-- SCRIPTS -->
+          <!-- JQuery -->
+          <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+          <script type="text/javascript" src="js/zoom.js"></script>
+          <!-- Bootstrap tooltips -->
+          <script type="text/javascript" src="js/popper.min.js"></script>
+          <!-- Bootstrap core JavaScript -->
+          <script type="text/javascript" src="js/bootstrap.min.js"></script>
+          <!-- MDB core JavaScript -->
+          <script type="text/javascript" src="js/mdb.min.js"></script>
+          <!-- Initializations -->
+          <script type="text/javascript">
+            // Animations initialization
+            new WOW().init();
+          </script>
+           <script>
+        imageZoom("myimage", "myresult"); 
+        </script>
+        </body>
 
-    </section>
-          </div>
-          <!--Content-->
-
-        </div>
-        <!--Grid column-->
-
-      </div>
-      <!--Grid row-->
-
-      <hr>
-
-      <!--Grid row-->
-      <div class="row d-flex justify-content-center wow fadeIn">
-
-        <!--Grid column-->
-        <div class="col-md-6 text-center">
-
-          <h4 class="my-4 h4">Mais Informações sobre o Produto</h4>
-
-          <p>A linha de charutos Montecristo 1935 foi lançada, de forma limitada em 2015, para comemorar os 80 anos da marca, e agora virou um charuto de linha, com bitolas inéditas e blends mais encorpados, feitos para agradar quem aprecia um tabaco rico e intenso. A linha se apresenta com um miolo de sabor encorpado, diferente dos demais charutos da linha que possuem um tabaco de fortaleza média para forte e vem acondicionados em caixas de design exclusivo, de cor marrom Carmelita e com bordas arredondadas. Além da anilha tradicional se incorporou uma segunda anilha com o nome da bitola e uma terceira anilha no pé do charuto com a tradicinal flor de lis, que distingue a marca montecristo.
-<br>
-<br>
-Escala de Força: Médio a Forte
-Bitola: 130mm x 19,84mm</p>
-
-        </div>
-        <!--Grid column-->
-
-      </div>
-      <!--Grid row-->
-
-      <!--Grid row-->
-      <div class="row wow fadeIn">
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4">
-
-          <img src="https://www.charutosonline.com/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/m/o/montecristo-1935-dumas-un.jpg" class="img-fluid" alt="">
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4">
-
-          <img src="https://www.charutosonline.com/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/m/o/montecristo-1935-dumas-un.jpg" class="img-fluid" alt="">
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4">
-
-          <img src="https://www.charutosonline.com/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/m/o/montecristo-1935-dumas-un.jpg" class="img-fluid" alt="">
-
-        </div>
-        <!--Grid column-->
-
-      </div>
-      <!--Grid row-->
-
-    </div>
-  </main>
-  <!--Main layout-->
-
-    <!--Footer-->
-  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
-    <hr class="my-4">
-
-    <!-- Social icons -->
-    <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-        <i class="fab fa-facebook-f mr-3"></i>
-      </a>
-
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
-        <i class="fab fa-twitter mr-3"></i>
-      </a>
-
-      </div>
-    <!-- Social icons -->
-
-    <!--Copyright-->
-    <div class="footer-copyright py-3">
-      © 2019 Copyright:
-      <a>Charutos E-commerce</a>
-    </div>
-    <!--/.Copyright-->
-
-  </footer>
-  <!--/.Footer-->
-
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/zoom.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Initializations -->
-  <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
-  </script>
-   <script>
-imageZoom("myimage", "myresult"); 
-</script>
-</body>
-
-<script src='https://code.jquery.com/jquery-2.1.1.js'></script>
-<script src='https://unpkg.com/xzoom/dist/xzoom.min.js'></script>
-<script src='https://hammerjs.github.io/dist/hammer.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js'></script>
+        <script src='https://code.jquery.com/jquery-2.1.1.js'></script>
+        <script src='https://unpkg.com/xzoom/dist/xzoom.min.js'></script>
+        <script src='https://hammerjs.github.io/dist/hammer.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js'></script>
 
 
-</html>
+        </html>
