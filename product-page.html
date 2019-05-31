@@ -37,17 +37,19 @@
 
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
+           <li class="nav-item">
+            <a class="nav-link waves-effect" href="home-page.html">Página Inicial</a>
+          </li>
           <li class="nav-item active">
-            <a class="nav-link waves-effect" href="#">Página Inicial
-              <span class="sr-only">(Atual)</span>
-            </a>
+            <a class="nav-link waves-effect" href="#" target="_blank">Produtos</a>
+            <span class="sr-only">(atual)</span>
           </li>
         </ul>
 
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
-            <a class="nav-link waves-effect">
+            <a class="nav-link waves-effect" href="checkout-page.html">
               <span class="badge red z-depth-1 mr-1"> 1 </span>
               <i class="fas fa-shopping-cart"></i>
               <span class="clearfix d-none d-sm-inline-block">Carrinho</span>
@@ -71,10 +73,10 @@
         <!--Grid column-->
         <div class="col-md-6 mb-4">
 
-         <div id="wrap" style="top:0px;z-index:99;position:relative;"><a href="https://www.charutosonline.com/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/m/o/montecristo-1935-dumas-un.jpg" class="cloud-zoom" id="zoom1" rel="position:'inside',showTitle:1,titleOpacity:0.5,lensOpacity:0.5,adjustX: 0,adjustY:0" style="position: relative; display: block;">
-                <img src="https://www.charutosonline.com/media/catalog/product/cache/1/image/455x/9df78eab33525d08d6e5fb8d27136e95/m/o/montecristo-1935-dumas-un.jpg" alt="" title="Charuto Montecristo Línea 1935 Dumas - Unidade" style="display: block;">
-            </a><div class="mousetrap" style="background: rgb(255, 255, 255); opacity: 0; z-index: 99; position: absolute; width: 438px; height: 438px; left: 0px; top: 0px; cursor: move;"></div></div>
-
+         <div class="img-zoom-container">
+  <img id="myimage" src="img/charuto-destaque.jpg" width="300" height="240" alt="Charuto">
+  <div id="myresult" class="img-zoom-result"></div>
+</div>
         </div>
         <!--Grid column-->
 
@@ -271,6 +273,9 @@ Bitola: 130mm x 19,84mm</p>
     // Animations initialization
     new WOW().init();
   </script>
+   <script>
+imageZoom("myimage", "myresult"); 
+</script>
 </body>
 
 <script src='https://code.jquery.com/jquery-2.1.1.js'></script>
