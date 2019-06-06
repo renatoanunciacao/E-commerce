@@ -6,14 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Charutos Online</title>
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/mdb.min.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
     <style type="text/css">
       html,
       body,
@@ -21,7 +17,12 @@
       .carousel {
         height: 60vh;
       }
-
+      .product{
+          margin-bottom: 17.5rem !important;
+       }
+       .card-body {
+          min-height: 190px;
+       }
       @media (max-width: 740px) {
 
         html,
@@ -42,12 +43,13 @@
         }
       }
 
+      
+
     </style>
   </head>
 
   <body>
 
-    <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
       <div class="container">
 
@@ -55,31 +57,32 @@
             <img src="img/logo.jpg" alt="">
           </a>
 
-        <!-- Collapse -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-          <!-- Left -->
-          <ul class="navbar-nav mr-auto">
-             <li class="nav-item active">
-              <a class="nav-link waves-effect" href="#">Página Inicial
-                <span class="sr-only">(atual)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect" href="produto.html">Produtos</a>
-            </li>
-          </ul>
+           <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link waves-effect" href="./index.html">Página Inicial
+              <span class="sr-only"></span>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link waves-effect" href="./produto.html">Detalhe do Produto
+              <span class="sr-only"></span>
+            </a>
+          </li>
+        </ul>
+      
 
-          <!-- Right -->
           <ul class="navbar-nav nav-flex-icons">
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="confirmacao.html">
+              <a class="nav-link waves-effect" href="./confirmacao.html">
                 <span class="badge red z-depth-1 mr-1"> 1 </span>
                 <i class="fas fa-shopping-cart"></i>
                 <span class="clearfix d-none d-sm-inline-block">Carrinho</span>
@@ -91,88 +94,67 @@
 
       </div>
     </nav>
-    <!-- Navbar -->
 
-     <!--Carousel Wrapper-->
     <div id="carousel-example-1z" class="carousel slide carousel-fade pt-4" data-ride="carousel">
 
-      <!--Indicators-->
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-1z" data-slide-to="1"></li>
         <li data-target="#carousel-example-1z" data-slide-to="2"></li>
       </ol>
-      <!--/.Indicators-->
 
-      <!--Slides-->
       <div class="carousel-inner" role="listbox">
 
-        <!--First slide-->
         <div class="carousel-item active">
           <div class="view" style="background-image: url('https://raw.githubusercontent.com/renatoanunciacao/E-commerce/master/img/banner-home-01.jpg'); background-repeat: no-repeat; background-size: cover;">
 
             
           </div>
         </div>
-        <!--/First slide-->
 
-        <!--Second slide-->
         <div class="carousel-item">
           <div class="view" style="background-image: url('https://raw.githubusercontent.com/renatoanunciacao/E-commerce/master/img/banner-home-02.jpg'); background-repeat: no-repeat; background-size: cover;">
 
             
           </div>
         </div>
-        <!--/Second slide-->
 
-        <!--Third slide-->
         <div class="carousel-item">
           <div class="view" style="background-image: url('https://raw.githubusercontent.com/renatoanunciacao/E-commerce/master/img/banner-home-03.jpg'); background-repeat: no-repeat; background-size: cover;">
           </div>
         </div>
-        <!--/Third slide-->
 
       </div>
-      <!--/.Slides-->
 
-      <!--Controls-->
       <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
         <span class="fas fa-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="sr-only">Anterior</span>
       </a>
       <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
         <span class="fas fa-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="sr-only">Próximo</span>
       </a>
-      <!--/.Controls-->
 
     </div>
-    <!--/.Carousel Wrapper-->
 
-    <!--Main layout-->
     <main>
       <div class="container">
 
-        <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark mdb-color lighten-3 mt-3 mb-5">
 
-          <!-- Navbar brand -->
           <span class="navbar-brand">Categorias:</span>
 
-          <!-- Collapse button -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
             aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- Collapsible content -->
           <div class="collapse navbar-collapse" id="basicExampleNav">
 
-            <!-- Links -->
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Todas
-                  <span class="sr-only">(Atual)</span>
+                  <span class="sr-only"></span>
                 </a>
               </li>
               <li class="nav-item">
@@ -186,32 +168,24 @@
               </li>
 
             </ul>
-            <!-- Links -->
 
             <form class="form-inline">
               <div class="md-form my-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Search">
+                <input class="form-control mr-sm-2 search" type="text" placeholder="Pesquisar" aria-label="Search">
               </div>
             </form>
           </div>
-          <!-- Collapsible content -->
 
         </nav>
-        <!--/.Navbar-->
 
-        <!--Section: Products v.3-->
         <section class="text-center mb-4">
 
-          <!--Grid row-->
           <div class="row wow fadeIn">
 
-            <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4">
 
-              <!--Card-->
               <div class="card">
 
-                <!--Card image-->
                 <div class="view overlay">
                   <img src="img/charuto-01.jpg"
                     alt="">
@@ -219,11 +193,8 @@
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
-                <!--Card image-->
 
-                <!--Card content-->
                 <div class="card-body text-center">
-                  <!--Category & Title-->
                   <a href="" class="grey-text">
                     <h5>Charuto Hoyo de Rio Seco</h5>
                   </a>
@@ -239,21 +210,15 @@
                   </h4>
 
                 </div>
-                <!--Card content-->
 
               </div>
-              <!--Card-->
 
             </div>
-            <!--Grid column-->
 
-            <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4">
 
-              <!--Card-->
               <div class="card">
 
-                <!--Card image-->
                 <div class="view overlay">
                   <img src="img/charuto-02.jpg"
                     alt="">
@@ -261,11 +226,8 @@
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
-                <!--Card image-->
 
-                <!--Card content-->
                 <div class="card-body text-center">
-                  <!--Category & Title-->
                   <a href="" class="grey-text">
                     <h5>Charuto Montecristo Línea 1935 Maltes</h5>
                   </a>
@@ -280,21 +242,15 @@
                   </h4>
 
                 </div>
-                <!--Card content-->
 
               </div>
-              <!--Card-->
 
             </div>
-            <!--Grid column-->
 
-            <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4">
 
-              <!--Card-->
               <div class="card">
 
-                <!--Card image-->
                 <div class="view overlay">
                   <img src="img/charuto-03.jpg"
                     alt="">
@@ -302,11 +258,8 @@
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
-                <!--Card image-->
 
-                <!--Card content-->
                 <div class="card-body text-center">
-                  <!--Category & Title-->
                   <a href="" class="grey-text">
                     <h5>Charuto Montecristo Línea 1935 Dumas</h5>
                   </a>
@@ -322,21 +275,15 @@
                   </h4>
 
                 </div>
-                <!--Card content-->
 
               </div>
-              <!--Card-->
 
             </div>
-            <!--Grid column-->
 
-            <!--Fourth column-->
             <div class="col-lg-3 col-md-6 mb-4">
 
-              <!--Card-->
               <div class="card">
 
-                <!--Card image-->
                 <div class="view overlay">
                   <img src="img/charuto-04.jpg"
                     alt="">
@@ -344,11 +291,8 @@
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
-                <!--Card image-->
 
-                <!--Card content-->
                 <div class="card-body text-center">
-                  <!--Category & Title-->
                   <a href="" class="grey-text">
                     <h5>Charuto Alonso Menendez Del Patron Corona</h5>
                   </a>
@@ -363,27 +307,19 @@
                   </h4>
 
                 </div>
-                <!--Card content-->
 
               </div>
-              <!--Card-->
 
             </div>
-            <!--Fourth column-->
 
           </div>
-          <!--Grid row-->
 
-          <!--Grid row-->
           <div class="row wow fadeIn">
 
-            <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4">
 
-              <!--Card-->
               <div class="card">
 
-                <!--Card image-->
                 <div class="view overlay">
                   <img src="img/caixa-01.jpg"
                     alt="">
@@ -391,11 +327,8 @@
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
-                <!--Card image-->
 
-                <!--Card content-->
                 <div class="card-body text-center">
-                  <!--Category & Title-->
                   <a href="" class="grey-text">
                     <h5>Charuto Partagas Super</h5>
                   </a>
@@ -412,21 +345,15 @@
                   </h4>
 
                 </div>
-                <!--Card content-->
 
               </div>
-              <!--Card-->
 
             </div>
-            <!--Grid column-->
 
-            <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4">
 
-              <!--Card-->
               <div class="card">
 
-                <!--Card image-->
                 <div class="view overlay">
                   <img src="img/caixa-02.jpg"
                     alt="">
@@ -434,11 +361,8 @@
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
-                <!--Card image-->
 
-                <!--Card content-->
                 <div class="card-body text-center">
-                  <!--Category & Title-->
                   <a href="" class="grey-text">
                     <h5>Charuto Partagas Mille Fleur</h5>
                   </a>
@@ -453,21 +377,15 @@
                   </h4>
 
                 </div>
-                <!--Card content-->
 
               </div>
-              <!--Card-->
 
             </div>
-            <!--Grid column-->
 
-            <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4">
 
-              <!--Card-->
               <div class="card">
 
-                <!--Card image-->
                 <div class="view overlay">
                   <img src="img/caixa-03.jpg"
                     alt="">
@@ -475,11 +393,8 @@
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
-                <!--Card image-->
 
-                <!--Card content-->
                 <div class="card-body text-center">
-                  <!--Category & Title-->
                   <a href="" class="grey-text">
                     <h5>Charuto Hoyo Palmas Extras</h5>
                   </a>
@@ -496,21 +411,15 @@
                   </h4>
 
                 </div>
-                <!--Card content-->
 
               </div>
-              <!--Card-->
 
             </div>
-            <!--Grid column-->
 
-            <!--Fourth column-->
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4 product">
 
-              <!--Card-->
               <div class="card">
 
-                <!--Card image-->
                 <div class="view overlay">
                   <img src="img/caixa-04.jpg"
                     alt="">
@@ -518,11 +427,8 @@
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
-                <!--Card image-->
 
-                <!--Card content-->
                 <div class="card-body text-center">
-                  <!--Category & Title-->
                   <a href="" class="grey-text">
                     <h5>Charuto Romeu e Julieta Coronitas Cedro</h5>
                   </a>
@@ -537,25 +443,18 @@
                   </h4>
 
                 </div>
-                <!--Card content-->
 
               </div>
-              <!--Card-->
 
             </div>
-            <!--Fourth column-->
 
           </div>
-          <!--Grid row-->
 
         </section>
-        <!--Section: Products v.3-->
 
-        <!--Pagination-->
         <nav class="d-flex justify-content-center wow fadeIn">
           <ul class="pagination pg-blue">
 
-            <!--Arrow left-->
             <li class="page-item disabled">
               <a class="page-link" href="#" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
@@ -589,62 +488,46 @@
             </li>
           </ul>
         </nav>
-        <!--Pagination-->
 
       </div>
     </main>
-    <!--Main layout-->
 
-    <!-- Footer -->
 <footer class="page-footer font-small pt-4">
 
-  <!-- Footer Text -->
   <div class="container-fluid text-center text-md-left">
 
-    <!-- Grid row -->
     <div class="row">
 
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
+      <div class="col-md-3 mt-md-0 mt-3 ajust-footer">
 
-        <!-- Content -->
         <h5 class="text-uppercase font-weight-bold">Charutos Online</h5>
         <p>Endereço: Av. Pres. Vargas, 1610, Loja 20. Passo Fundo - RS</p>
         <p>Telefone: (54) 3321-2299910</p>
         <p>E-mail: contato@charutosonline.com<p>
 
       </div>
-      <!-- Grid column -->
 
       <hr class="clearfix w-100 d-md-none pb-3">
 
-      <!-- Grid column -->
-      <div class="col-md-6 mb-md-0 mb-3">
+      <div class="col-md-3 mb-md-0 mb-3">
 
-        <!-- Content -->
         <h5 class="text-uppercase font-weight-bold">Siga nossas redes sociais</h5>
         <i class="fab fa-facebook " style="font-size: 35px;" href="#"></i>
         <i class="fab fa-instagram " style="font-size: 35px;" href="#"></i>
         <i class="fab fa-twitter " style="font-size: 35px;" href="#"></i>
 
       </div>
-      <!-- Grid column -->
 
     </div>
-    <!-- Grid row -->
 
   </div>
-  <!-- Footer Text -->
 
-      <!--Copyright-->
-      <div class="footer-copyright py-3">
+      <div class="footer-copyright py-3 text-center">
         © 2019 Copyright:
         <a>Charutos E-commerce</a>
       </div>
-      <!--/.Copyright-->
 
     </footer>
-    <!--/.Footer-->
 
     <!-- SCRIPTS -->
     <!-- JQuery -->

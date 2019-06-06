@@ -9,16 +9,15 @@
                 <!-- Font Awesome -->
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
                 <!-- Bootstrap core CSS -->
-                <link href="css/bootstrap.min.css" rel="stylesheet">
+                <link href="./css/bootstrap.min.css" rel="stylesheet">
                 <!-- Material Design Bootstrap -->
-                <link href="css/mdb.min.css" rel="stylesheet">
+                <link href="./css/mdb.min.css" rel="stylesheet">
                 <!-- Your custom styles (optional) -->
-                <link href="css/style.min.css" rel="stylesheet">
+                <link href="./css/style.min.css" rel="stylesheet">
               </head>
 
               <body class="grey lighten-3">
 
-                <!-- Navbar -->
                 <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
                   <div class="container">
 
@@ -26,29 +25,32 @@
                         <img src="img/logo.jpg" alt="">
                       </a>
 
-                    <!-- Collapse -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <!-- Links -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                      <!-- Left -->
                       <ul class="navbar-nav mr-auto">
-                         <li class="nav-item">
-                          <a class="nav-link waves-effect" href="index.html">Página Inicial</a>
-                        </li>
-                        <li class="nav-item mr-auto">
-                          <a class="nav-link waves-effect" href="produto.html">Produtos</a>
-                        </li>
+                            <li class="nav-item active">
+                              <a class="nav-link waves-effect" href="./index.html">Página Inicial
+                                <span class="sr-only"></span>
+                              </a>
+                            </li>
                       </ul>
+                      <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                              <a class="nav-link waves-effect" href="./produto.html">Detalhe do Produto
+                                <span class="sr-only"></span>
+                              </a>
+                            </li>
+                      </ul>
+      
 
-                      <!-- Right -->
                       <ul class="navbar-nav nav-flex-icons">
                         <li class="nav-item">
-                          <a class="nav-link waves-effect">
+                          <a class="nav-link waves-effect" href="./confirmacao.html">
                             <span class="badge red z-depth-1 mr-1"> 1 </span>
                             <i class="fas fa-shopping-cart"></i>
                             <span class="clearfix d-none d-sm-inline-block">Carrinho</span>
@@ -60,58 +62,42 @@
 
                   </div>
                 </nav>
-                <!-- Navbar -->
 
-                <!--Main layout-->
                 <main class="mt-5 pt-4">
                   <div class="container wow fadeIn">
 
-                    <!-- Heading -->
                     <h2 class="my-5 h2 text-center">Confirmação de Compra</h2>
 
-                    <!--Grid row-->
                     <div class="row">
 
-                      <!--Grid column-->
                       <div class="col-md-8 mb-4">
 
-                        <!--Card-->
                         <div class="card">
 
-                          <!--Card content-->
                           <form class="card-body">
 
-                            <!--Grid row-->
                             <div class="row">
 
-                              <!--Grid column-->
                               <div class="col-md-6 mb-2">
 
-                                <!--firstName-->
                                 <div class="md-form ">
                                   <input type="text" id="firstName" class="form-control">
                                   <label for="firstName" class="">Nome</label>
                                 </div>
 
                               </div>
-                              <!--Grid column-->
 
-                              <!--Grid column-->
                               <div class="col-md-6 mb-2">
 
-                                <!--lastName-->
                                 <div class="md-form">
                                   <input type="text" id="lastName" class="form-control">
                                   <label for="lastName" class="">Sobrenome</label>
                                 </div>
 
                               </div>
-                              <!--Grid column-->
 
                             </div>
-                            <!--Grid row-->
 
-                            <!--Username-->
                             <div class="md-form input-group pl-0 mb-5">
                               <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">@</span>
@@ -119,23 +105,19 @@
                               <input type="text" class="form-control py-0" placeholder="Username" aria-describedby="basic-addon1">
                             </div>
 
-                            <!--email-->
                             <div class="md-form mb-5">
                               <input type="text" id="email" class="form-control" placeholder="seuemail@examplo.com">
                               <label for="email" class="">Email</label>
                               <div id="msgemail"></div>
                             </div>
 
-                            <!--address-->
                             <div class="md-form mb-5">
                               <input type="text" id="address" class="form-control" placeholder="">
                               <label for="address" class="">Endereço</label>
                             </div>
 
-                            <!--Grid row-->
                             <div class="row">
 
-                              <!--Grid column-->
                               <div class="col-lg-4 col-md-12 mb-4">
 
                                 <label for="country">Estado</label>
@@ -183,9 +165,7 @@
                                 
 
                               </div>
-                              <!--Grid column-->
 
-                              <!--Grid column-->
                               <div class="col-lg-4 col-md-6 mb-4">
 
                                 <label for="zip">CEP</label>
@@ -193,10 +173,8 @@
                             
 
                               </div>
-                              <!--Grid column-->
 
                             </div>
-                            <!--Grid row-->
 
                             <hr>
 
@@ -254,21 +232,16 @@
                           </form>
 
                         </div>
-                        <!--/.Card-->
 
                       </div>
-                      <!--Grid column-->
 
-                      <!--Grid column-->
                       <div class="col-md-4 mb-4">
 
-                        <!-- Heading -->
                         <h4 class="d-flex justify-content-between align-items-center mb-3">
                           <span class="text-muted">Seu carrinho</span>
                           <span class="badge badge-secondary badge-pill">3</span>
                         </h4>
 
-                        <!-- Cart -->
                         <ul class="list-group mb-3 z-depth-1">
                           <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
@@ -303,9 +276,7 @@
                             <strong>R$ 1.298,00</strong>
                           </li>
                         </ul>
-                        <!-- Cart -->
 
-                        <!-- Promo code -->
                         <form class="card p-2">
                           <div class="input-group">
                             <input type="text" class="form-control" placeholder="Promo code" aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -314,69 +285,51 @@
                             </div>
                           </div>
                         </form>
-                        <!-- Promo code -->
 
                       </div>
-                      <!--Grid column-->
 
                     </div>
-                    <!--Grid row-->
 
                   </div>
                 </main>
-                <!--Main layout-->
 
           
-    <!-- Footer -->
 <footer class="page-footer font-small pt-4">
 
-  <!-- Footer Text -->
   <div class="container-fluid text-center text-md-left">
 
-    <!-- Grid row -->
     <div class="row">
 
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
+      <div class="col-md-3 mt-md-0 mt-3 ajust-footer">
 
-        <!-- Content -->
         <h5 class="text-uppercase font-weight-bold">Charutos Online</h5>
         <p>Endereço: Av. Pres. Vargas, 1610, Loja 20. Passo Fundo - RS</p>
         <p>Telefone: (54) 3321-2299910</p>
         <p>E-mail: contato@charutosonline.com<p>
 
       </div>
-      <!-- Grid column -->
 
       <hr class="clearfix w-100 d-md-none pb-3">
 
-      <!-- Grid column -->
-      <div class="col-md-6 mb-md-0 mb-3">
+      <div class="col-md-3 mb-md-0 mb-3">
 
-        <!-- Content -->
         <h5 class="text-uppercase font-weight-bold">Siga nossas redes sociais</h5>
         <i class="fab fa-facebook " style="font-size: 35px;" href="#"></i>
         <i class="fab fa-instagram " style="font-size: 35px;" href="#"></i>
         <i class="fab fa-twitter " style="font-size: 35px;" href="#"></i>
 
       </div>
-      <!-- Grid column -->
 
     </div>
-    <!-- Grid row -->
 
   </div>
-  <!-- Footer Text -->
 
-      <!--Copyright-->
-      <div class="footer-copyright py-3">
+      <div class="footer-copyright py-3 text-center">
         © 2019 Copyright:
         <a>Charutos E-commerce</a>
       </div>
-      <!--/.Copyright-->
 
     </footer>
-    <!--/.Footer-->
    <!-- SCRIPTS -->
                 <!-- JQuery -->
                 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
